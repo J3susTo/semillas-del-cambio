@@ -5,10 +5,14 @@ html {
 
 
 :root {
-    --bg-overlay-color: #2f3e2e;  /* Verde oscuro con tonos marrón */
-    --bg-section-1: #34453d;  /* Un verde más suave para la primera sección */
-    --bg-section-2: #2b362d;  /* Un verde ligeramente más oscuro */
-    --bg-section-3: #4c5a47;  /* Un tono intermedio entre verde y marrón */
+    --bg-overlay-color: #2f3e2e;
+    /* Verde oscuro con tonos marrón */
+    --bg-section-1: #34453d;
+    /* Un verde más suave para la primera sección */
+    --bg-section-2: #2b362d;
+    /* Un verde ligeramente más oscuro */
+    --bg-section-3: #4c5a47;
+    /* Un tono intermedio entre verde y marrón */
 }
 
 /* Primera sección */
@@ -31,8 +35,10 @@ html {
 
 body {
     background-color: var(--bg-overlay-color);
-    color: white;  /* Opcional, para que el texto sea legible sobre el fondo oscuro */
-    font-family: Arial, sans-serif;  /* Establecer una fuente de ejemplo */
+    color: white;
+    /* Opcional, para que el texto sea legible sobre el fondo oscuro */
+    font-family: Arial, sans-serif;
+    /* Establecer una fuente de ejemplo */
     margin: 0;
     padding: 0;
 }
@@ -54,40 +60,53 @@ body {
     margin: auto;
 
 }
+
 .card-img-top {
-    width: 100%;         /* Las imágenes ocuparán todo el ancho del contenedor */
-    height: 200px;       /* Altura fija para las imágenes */
-    object-fit: cover;   /* Mantiene la proporción de la imagen */
-    transition: transform 0.3s ease, filter 0.3s ease; /* Animación suave */
+    width: 100%;
+    /* Las imágenes ocuparán todo el ancho del contenedor */
+    height: 200px;
+    /* Altura fija para las imágenes */
+    object-fit: cover;
+    /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    /* Animación suave */
 }
 
 .card-img-top:hover {
-    transform: scale(1.1);  /* Aumenta el tamaño de la imagen al pasar el cursor */
-    filter: brightness(1.2); /* Aumenta el brillo de la imagen */
+    transform: scale(1.1);
+    /* Aumenta el tamaño de la imagen al pasar el cursor */
+    filter: brightness(1.2);
+    /* Aumenta el brillo de la imagen */
 }
 
 
 /*Inicio stylos carucel*/
 /* Fondo para la sección del carrusel */
 #contaminacion {
-    background-color: var(--bg-overlay-color);  /* Usa el color de fondo que prefieras */
+    background-color: var(--bg-overlay-color);
+    /* Usa el color de fondo que prefieras */
     padding: 40px 0;
-    border-radius: 10px;  /* Bordes redondeados para un estilo más moderno */
+    border-radius: 10px;
+    /* Bordes redondeados para un estilo más moderno */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Ajustar las imágenes dentro del carrusel */
 .carousel-item img {
     width: 100%;
-    height: auto;  /* Asegura que las imágenes no se deformen */
-    border-radius: 10px;  /* Bordes redondeados para las imágenes */
-    object-fit: cover;  /* Asegura que las imágenes cubran bien el espacio sin deformarse */
+    height: auto;
+    /* Asegura que las imágenes no se deformen */
+    border-radius: 10px;
+    /* Bordes redondeados para las imágenes */
+    object-fit: cover;
+    /* Asegura que las imágenes cubran bien el espacio sin deformarse */
 }
 
 /* Personalización de los controles del carrusel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);  /* Iconos de control más visibles */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Iconos de control más visibles */
     border-radius: 50%;
     padding: 10px;
 }
@@ -101,7 +120,8 @@ body {
 /* Mejorar la visibilidad de los botones cuando no se está interactuando con ellos */
 .carousel-control-prev,
 .carousel-control-next {
-    filter: invert(100%);  /* Cambia el color de los iconos a blanco */
+    filter: invert(100%);
+    /* Cambia el color de los iconos a blanco */
 }
 
 /* Asegurarse de que los iconos de control no se solapen con la imagen */
@@ -112,11 +132,22 @@ body {
 
 /* Controlar la transición de las imágenes */
 .carousel-inner {
-    border-radius: 10px;  /* Bordes redondeados para la parte interna del carrusel */
+    border-radius: 10px;
+    /* Bordes redondeados para la parte interna del carrusel */
 }
 
 /* Agregar un sombreado o borde para hacer el carrusel más destacado */
 .carousel {
     border: 4px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+}
+
+/* Stylos carusel inferio  del Proyecto */
+.carrusel-img {
+    height: 400px;
+    /* o la altura que quieras */
+    object-fit: cover;
+    /* Recorta la imagen para que llene el espacio */
+    object-position: center;
+    /* Centra la imagen */
 }
