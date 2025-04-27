@@ -151,3 +151,20 @@ body {
     object-position: center;
     /* Centra la imagen */
 }
+
+/* primer carucel */
+#carruselContaminantes .carousel-item {
+    height: 500px;
+    /* Altura fija para todo el carrusel, puedes ajustarlo */
+    overflow: hidden;
+    /* Esconde el exceso de imagen */
+}
+
+#carruselContaminantes .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* Recorta y mantiene el relleno bonito */
+    object-position: center;
+    /* Centra la imagen */
+}
