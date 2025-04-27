@@ -12,19 +12,19 @@ html {
 }
 
 /* Primera sección */
-#section-1 {
+#importancia {
     background-color: var(--bg-section-1);
     padding: 20px;
 }
 
 /* Segunda sección */
-#section-2 {
+#noticias {
     background-color: var(--bg-section-2);
     padding: 20px;
 }
 
 /* Tercera sección */
-#section-3 {
+#ubicacion {
     background-color: var(--bg-section-3);
     padding: 20px;
 }
@@ -38,7 +38,7 @@ body {
 }
 
 .hero {
-    background-image: url('/images/imagen10.jpg');
+    background-image: url('../images/imagen10.jpg');
     background-size: cover;
     background-position: center;
     height: 90vh;
